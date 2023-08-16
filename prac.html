@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+        <br>
+        <P> Choose your favorite web technologies :</P>
+        <form>
+            <input type ="radio" id="html" name="Fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type ="radio" id="css" name="Fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type ="radio" id="javascript" name="Fav_language" value="JAVASCRIPT">
+            <label for="javascript">JAVASCRIPT</label><br>
+       </form>
+       <br>
+       <input type ="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+       <label for="vehicle1">i have a motorbike</label><br>
+       <input type ="checkbox" id="vehicle2" name="vehicle2" value="Car">
+       <label for="vehicle2">i have a luxurious car</label><br>
+       <input type ="checkbox" id="vehicle3" name="vehicle3" value="boat">
+       <label for="vehicle3">i have a boat</label>
+       <br>
+       <br>
+       <input type ="button"value="SUBMIT">
+       <br>
+       <br>
+       <label for="Cars">Choose a car:</label>
+       <select id="cars" name="cars" size="4" multiple>
+           <option value="BMW">BMW</option>
+           <option value="AUDI">AUDI</option>
+           <option value="BALENO">BALENO</option>
+           <option value="CIAZ">CIAZ</option>
+      </select>
+      <br>
+      <br>
+      <textarea name ="message" rows="10" cols="30">type your messeage
+      </textarea>
+      <br>
+      <br>
+      <button type="button" onclick="alert('OOPS')">CLICK ME</button>
+      <br>
+      <br>
+      <h2>Grouping form data with Fieldset</h2>
+      <br>
+      <form action="try.html">
+        <fieldset>
+            <legend>personal info</legend>
+            <label for ="fname">firstName:</label>
+            <input type="text" id="fname" name="fname" autofocusq>
+            <br>
+            <br>
+            <label for ="lname">lastName:</label>
+            <input type="text" id="lname" name="lname" >
+            <br>
+            <br>
+            <input type="submit" value ="submit">
+       </fieldset>
+      </form>
+      <br>
+      <br>
+      <input list="theatres">
+      <datalist id="theatres">
+      <option value="sathyam cinema"></option> 
+      <option value="ganga cinema"></option> 
+      <option value="rocky cinema"></option> 
+      <option value="s2 cinema"></option> 
+      </datalist>
+      <input type="submit">
+
+<form>
+    <label for="favcolor">select your favourite color</label>
+    <input type="color" id="favcolor" name="favcolor"
+</form>
+<br>
+<br>
+<form>
+    <label for="birthday">DOB</label>
+    <input type="date" id="birthday" name="birthday">
+    <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<form>
+     <label for="birthdaytime">DOB:</label>
+     <input type="datetime-local" id="birthdaytime" name="birthdaytime"
+     <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<label for="myfile">select a file</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+<input type="submit" value="submit">
+<br>
+<br>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+    var c = document.getEleme ntById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+</script>
+
+
+
+
+
+<div>
+    <label for="father's name">Father's Name</label>
+    <input type="text" id="father's name" name="father's name">
+</div>
+<div>
+    <label for="mother's name">Mother's Name</label>
+    <input type="text" id="mother's name" name="mother's name">
+</div>
+<div>
+ <label for="dob">Date of Birth</label>
+ <input type="date" id="dob" name="dob">
+</div>
+<div>
+ <label for="gender">GENDER</label>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">female</label>
+</div>
+<div>
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email">
+</div>
+<div>>
+<label for="gender"> GENDER</label>
+<textarea name="message" rows="5" cols="30"></textarea>
+</div> 
+<div>
+<label for="state">State</label>
+<input type="textarea" id="state" name="state">
+</div>
+<div>
+<label for="city">City</label>
+<input type="textarea" id="City" name="City">
+</div>
+</form>
+</table>
+
+
+</body>
+</html>
+
+
+
+
+
+    </body>
+</html>
