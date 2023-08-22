@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* ---------HEADER: NAVIGATION BAR------ */
+.container{
+  width:100vw;
+  height:100vh;
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  animation: change 15s infinite ease-in-out;
+}
+
+nav{
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right:20px;
+  background-color: black;
+  padding-bottom: 3px;
+  position: inherit;
+}
+
+.logo{
+  width: 180px;
+  color: white;
+  font-size: 25px;
+  margin-left:20px;
+  margin-top: 3px;
+}
+
+nav ul{
+  list-style: none;
+  width:100%;
+  text-align: right;
+  padding-right: 50px;
+ 
+}
+
+nav ul li{
+  display: inline-block;
+  margin:10px 20px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+
+nav ul li a:hover{
+  color: rgb(252, 5, 120);
+}
+
+
+/*---------- BUTTON 1 : BOOKINGS----------- */
+.btn{
+  display:flex;
+  align-items: center;
+  border:0;
+  outline:0;
+  border-radius: 10px;
+  padding:5px 10px;
+  font-weight: 400;
+  cursor:pointer;
+  margin:10px 10px;
+  border-color:black;   
+  font-weight: bold;
+  
+}
+
+.btn:hover{
+  background-color:rgb(252, 5, 120);
+  color:white;
+}
+
+
+
+/*----------- MAIN CONTENT--------*/
+.content{
+  margin-top:15%;
+  color:whitesmoke;
+  max-width: 620px;
+}
+.content h1{
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 25px;
+}
+.content p{
+  padding-left: 25px;
+  font-size: 15px;
+}
+
+
+/* --------BUTTON 2 : KNOW MORE--------- */
+.btn1{
+  position:relative;
+  left:25px;
+  width:15vw;
+  margin-top: 20px;
+  padding:10px 20px;
+  border-radius: 10px;
+  background-color: rgb(252, 5, 120);
+  border-color:white (214, 12, 56);
+  border:2px solid  white;
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor:pointer;
+  background: transparent;
+  overflow:hidden;
+  z-index: 1;
+}
+ 
+.layer {
+  background-color:  rgb(252, 5, 120);
+  border-radius: 10px;
+  height: 100%;
+  width:0%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn1:hover .layer {
+  width: 100%;
+ 
+}
+.btn1:hover{
+  border:none;
+}
+
+
+/* ----------IMAGE ANIMATION------- */
+@keyframes change{
+  0%
+  {
+      background-image: url('../images/header-bg.png');
+  }
+  20%
+  {
+      background-image: url('../images/img5.png');
+  }
+  40%
+  {
+      background-image: url('../images/img3.png');
+  }
+  60%
+  {
+      background-image: url('../images/img1.png');
+  }
+  80%
+  {
+      background-image: url('../images/img2.png');
+  }
+  100%
+  {
+      background-image: url('../images/bg2.png');
+  }
+}
+
+
+/* ----------MEDIA QUERY FOR RESPONSIVE------- */
+@media screen and (max-width:1057px){
+  .container nav{
+      flex-direction: column;
+      flex-wrap: wrap;
+      width:100%;
+
+  }
+
+  .container nav ul li{
+      flex-direction: column;
+      width:100%;
+      text-align: center;
+  }
+
+  .btn{
+      display: flex;
+      justify-content: center;
+    
+     
+  }
+  
+} 
