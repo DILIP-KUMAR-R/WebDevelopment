@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE WEB PAGE</title>
+
+     <!-- BOOTSTRAP CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- FONT AWESOME CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+ 
+</head>
+<body>
+    <!--NAVBAR START -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid mx-3">
+
+          <img src="./images/logo.png" alt="" width="60" height="60">
+          <a class="navbar-brand text-black fs-2 fw-bold " href="#"><span class="text-warning">T</span>ravelmania</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 ">
+              <li class="nav-item">
+                <a class="nav-link active text-black" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booking">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+<!-- NAVBAR END -->
+
+
+<!-- Carousel START-->
+<section id="home">
+<div class="carousel slide-fade" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Task-3/images/img1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>United Kingdom</h3>
+          <p>We had such a great time in UK!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/img2.jpg" alt="Chicago" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago! Keep Calm and Travel On</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="./images/img3.jpg" alt="New York" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>Travel is Worthwhile!</p>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+ </section> 
+<!--CAROUSEL END  -->
+
+     
+
+<!-- BOOKING START -->
+
+<div class="container" id="booking">
+    <br><br><br>
+    <section class="booking" >
+    <div class="container mt-4">
+      <div class="main-text text-center text-black fs-2 fw-bold ">
+        <h1><span class="text-warning">B</span>ooking</h1>
+      </div>
+
+      <div class="container rounded-2 p-5" id="Contact" style="background: url(../Task-3/images/book.png); 
+       background-position: center; background-repeat: no-repeat; background-size: cover;  ">
+
+<div class="container mt-3">
+    <h2 class="text-white">Book Your Trip</h2>
+    
+    <form action>
+        <div class="form-floating input-group mt-3 mb-3">
+            <input type="text" class="form-control " id="pwd" placeholder="Enter First Name" name="name">
+            <span class="input-group-text"><i class="fa-solid fa-user"></i></span> 
+            <label for="name">First Name</label>
+        </div>
+        <div class="form-floating input-group mt-3 mb-3">
+            <input type="text" class="form-control " id="name" placeholder=" Enter Last Name" name="name">
+            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+            <label for="name">Last Name</label>
+          </div>
+          
+      <div class="form-floating input-group mb-3 mt-3">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+        <label for="email">Email</label>
+      </div>
+      
+      <div class="form-floating input-group mb-3 mt-3">
+        <input type="tel" class="form-control" id="email" placeholder="Enter a phone no" name="phoneno">
+        <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+        <label for="email">Phone No</label>
+      </div>
+      
+      <div class="form-floating  input-group mt-3 mb-3">
+        <input type="number" class="form-control " id="days" placeholder="No.of days" name="days">
+        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+        <label for="days">No.Of Days</label>
+      </div>
+      <div class="form-floating input-group mt-3 mb-3">
+        <input type="text" class="form-control" id="place" placeholder="Where To" name="place">
+        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+        <label for="days">Where To</label>
+      </div>
+
+
+      <button type="Book " class="btn btn-warning">Book Now</button>
+    </form>
+  </div>       
+</div>   
+
+      <section>    
+</div>
+
+<!-- BOOKING END -->
+
+
+
+<!-- PACKAGES SECTION START -->
+<div class="container" id="packages">
+    <br><br><br><br>
+ <section class="packages" >
+        <div class="container mt-5">
+          
+          <div class="main-txt text-center text-black fs-2 fw-bold">
+            <h1><span class="text-warning ">P</span>ackages</h1>
+          </div>
+          <!-- 1st ROW START -->
+          <div class="row mt-4" >
+            <div class="col-md-4 py-3 py-md-0">
+                <!-- CARD -->
+              <div class="card shadow bg-body rounded">
+                <img src="./images/uk.png" alt="">
+                <div class="card-body">
+                 <h3 class="card-title">United Kingdom</h3>
+                  <p>Cambridge. Home to the internationally famous university, Cambridge is a good place to visit in the UK for a day trip. From looking up at the beautiful architecture to punting along the river, you'll have plenty to do in this culturally rich UK city.</p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-muted "></i>
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow bg-body rounded ">
+                <img src="./images/france.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">France</h3>
+                  <p>Paris is the most visited city in France and one of the most popular tourist destinations in the world. The city is known for its iconic landmarks, such as the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral.</p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow bg-body rounded">
+                <img src="./images/pakistan.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Pakistan</h3>
+                  <p>Concordia is one of the paradisiacal Pakistan tourist places for hikers and climbers. It is situated in the north of the country, around the Chinese border. Pakistan is home to five of the fourteen highest mountain peaks in the world.</p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1st ROW END -->
+
+          <!-- 2nd ROW START-->
+          <div class="row mt-5">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow bg-body rounded">
+                <img src="./images/italy.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Italy</h3>
+                  <p>Rome, Florence, and Venice are the three most popular cities to visit on a first trip to Italy. These are filled with some of Italy's most famous places and it is easy to get around using public transportation. </p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                   
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow bg-body rounded">
+                <img src="./images/india.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">India</h3>
+                  <p>The Taj Mahal is one of the seven wonders of the world and is considered to be the most popular tourist attraction in India. A symbol of love, the Taj was built by Mughal Emperor Shah Jahan for his queen Mumtaz.</p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-muted"></i>
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow bg-body rounded">
+                <img src="./images/us.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Unite States</h3>
+                  <p>The United States of America is literally the most famous place on earth. Since there are no second thoughts about its popularity, Besides a long list of tourist attractions like the statue of liberty, Golden Gate Bridge, Mount Rushmore,Canyon.</p>
+                  <div class="star">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <h6>Price: <strong>$500</strong></h6>
+                  <a class="btn btn-warning" href="#" role="button">Book Now</a>
+                </div>
+                <!-- 2nd Row end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+    </div>
+<!-- PACKAGES END -->
+
+<!-- ABOUT START -->
+ <div class="container" id="about">
+    <br><br><br>
+ <section class="about">
+    <div class="container mt-5">
+      <div class="main-txt text-center fs-2 fw-bold">
+        <h1>About <span class="text-warning">Us</span></h1>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 py-3 py-md-0 mx-sm-auto">
+            <img src="../Task-3/images/about-img (2).png" class="img-fluid "  alt="">
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0 ">
+          <h2>How Travel Agency Work</h2>
+          <p>Travelmania offer a wide range of services, including travel portal development, API integration, booking engine development, mobile app development, website design, content management systems (CMS), payment gateway integration, search engine optimization (SEO), digital marketing, analytics and reporting, and ongoing support and maintenance for travel technology solutions..</p>
+          <p>At our travel website development services, we specialize in creating customized and visually stunning websites that cater specifically to the travel industry. With our expertise, we can help travel companies, tour operators, hotels, and other travel businesses establish a strong online presence and attract more customers. Here's how our travel website development services can benefit your business.</p>
+          <a class="btn btn-warning" href="#" role="button">Know more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- ABOUT END -->
+
+
+
+
+   
+  <!-- Footer Start -->
+  <footer id="footer" class="bg-dark text-white  mt-5 pt-2" >
+    <h1><span class="text-warning">T</span>ravelmania</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+
+    <div class="social-links">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy;Copyright @Travelmania. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
