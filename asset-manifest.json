@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/DILIP-KUMAR-R/WebDevelopment.git/static/css/main.25eb680c.css",
+    "main.js": "/DILIP-KUMAR-R/WebDevelopment.git/static/js/main.72ee31bd.js",
+    "static/media/bg2.png": "/DILIP-KUMAR-R/WebDevelopment.git/static/media/bg2.016fd557ee7f4240374b.png",
+    "static/media/bg1.png": "/DILIP-KUMAR-R/WebDevelopment.git/static/media/bg1.86735bbfa5cab34cad21.png",
+    "static/media/france.png": "/DILIP-KUMAR-R/WebDevelopment.git/static/media/france.4925d099f94a65704376.png",
+    "static/media/bg3.png": "/DILIP-KUMAR-R/WebDevelopment.git/static/media/bg3.36c0a291fb872e6a37ab.png",
+    "index.html": "/DILIP-KUMAR-R/WebDevelopment.git/index.html",
+    "main.25eb680c.css.map": "/DILIP-KUMAR-R/WebDevelopment.git/static/css/main.25eb680c.css.map",
+    "main.72ee31bd.js.map": "/DILIP-KUMAR-R/WebDevelopment.git/static/js/main.72ee31bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25eb680c.css",
+    "static/js/main.72ee31bd.js"
+  ]
+}
